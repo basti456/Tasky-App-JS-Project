@@ -83,9 +83,9 @@
                     aria-label="Default select example"
                     id="taskType"
                   >
-                    <option value="1">Important</option>
-                    <option value="2">More Important</option>
-                    <option value="3">Most Important</option>
+                    <option value="Important">Important</option>
+                    <option value="More Important">More Important</option>
+                    <option value="Most Important">Most Important</option>
                   </select>
                 </div>
                 <!-- Task Description -->
@@ -196,6 +196,7 @@
                 placeholder="Search your task here..."
                 aria-label="Search Task"
                 aria-describedby="addon-wrapping"
+                oninput="searchTask.apply(this,arguments)"
               />
               <span class="input-group-text" id="addon-wrapping">
                 <i class="fas fa-search"></i>
